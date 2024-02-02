@@ -1,0 +1,28 @@
+{
+    "name": "endermanbugzjfc/imaginary-world",
+    "require": {
+        "pocketmine/pocketmine-mp": "^5.0.0"
+    },
+    "require-dev": {
+        "pocketmine/pocketmine-mp": "5.0.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "classmap": ["lib"]
+    },
+    "autoload-dev": {
+        "classmap": ["src"]
+    },
+    "scripts": {
+        "lint": [
+            "./vendor/bin/phpstan analyse lib src"
+        ]
+    },
+    "extra": {
+        "virion": {
+            "spec": "3.0",
+            "namespace-root": "Endermanbugzjfc\\ImaginaryWorld"
+        }
+    }
+}
